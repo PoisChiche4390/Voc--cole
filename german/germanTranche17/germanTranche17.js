@@ -397,7 +397,7 @@ function confirmBtn() {
             duolingoSoundBadAnswer.play();
             score = score + 1
             badAnswers = badAnswers + 1
-            document.getElementById("correctAnswer").innerHTML = "La bonne réponse était : " + `german${randomWord}`
+            document.getElementById("correctAnswer").innerHTML = "&#10060 La bonne réponse était : " + eval(`german${randomWord}`)
             document.getElementById("questionAndValidation").style.display = "none"
             document.getElementById("badAnswer").style.display = "grid"
             document.getElementById("questions").value = "";

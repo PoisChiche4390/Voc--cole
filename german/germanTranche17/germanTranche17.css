@@ -5,7 +5,6 @@
 
 * {
     font-family: Noto_Sans;
-    background: #f3f3f3;
 }
 
 #firstTranche17PageMenu {
@@ -41,7 +40,7 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #f7f7f7;
+    background-color: #eee;
 }
   
 .container:hover input ~ .checkmark {
@@ -77,22 +76,20 @@
     height: 6vh;
     width: 40vw;
     font-size: 1.25rem;
-    background: #ebd423;
+    background: #e3cc21;
+    box-shadow: 0 10px 0 0 #ab9916;
     color: black;
     border: 0 solid black;
     border-radius: 2vh;
     margin-top: 35vh;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 #startBtn:hover {
-    background: #d5bf17;
+    background: rgb(246, 220, 26);
 }
 
-#questionTranche17 {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 
 main {
     justify-content: center;
@@ -118,32 +115,40 @@ p {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    border: 0 solid black;
+    border: 3px solid #d2d2d2;
     border-radius: 2vh;
-    padding: 7px 6px;
+    padding: 7px 10px;
     background: white;
 }
 
 #questions {
+    display: grid;
     resize: none;
     height: 20vh;
     width: 30vw;
     margin-top: 11.5vh;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
     padding-top: 3px;
     padding-left: 3vw;
     padding-right: 3vw;
-    border: 0 solid black;
+    border: 3px solid #d2d2d2;
+    box-shadow: 0 5px 0 0 #d2d2d2;
     border-radius: 5vh;
     outline: none;
     font-size: 1.25rem;
-    background: #404044;
-    color: white;
+    background: white;
+}
+
+#separation {
+    width: 100vw;
+    border-top: 2px solid #d2d2d2;
+    margin-top: 19vh;
 }
 
 #submitBtn {
-    margin-top: 10vh;
+    margin-top: 7.5vh;
     justify-content: center;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -151,25 +156,28 @@ p {
     width: 175px;
     border: 0 solid black;
     border-radius: 1vh;
+    box-shadow: 0 5px 0 0 #279216;
     font-size: 1rem;
-    background: #39cb22;
-    color:black;
+    background: rgb(63, 197, 26);
+    color:rgb(255, 255, 255);
     cursor: pointer;
     transition: 0.1s;
 }
 
 #submitBtn:hover {
-    background: rgb(50, 183, 14);
-    color: white;
+    background: rgb(70, 213, 30);
 }
 
 #continueGoodAnswer {
     font-size: 20px;
     margin-top: 40vh;
+    margin-left: auto;
+    margin-right: auto;
     height: 12.5vh;
-    width: 20vw;
-    background: #39cb22;
-    color: black;
+    width: 400px;
+    background: rgb(63, 197, 26);
+    box-shadow: 0 10px 0 0 #279216;
+    color: rgb(255, 255, 255);
     border: 0 solid black;
     border-radius: 5vh;
     cursor: pointer;
@@ -177,24 +185,31 @@ p {
 }
 
 #continueGoodAnswer:hover {
-    background: rgb(50, 183, 14);
-    color: white;
+    background: rgb(70, 213, 30);
 }
 
 #correctAnswer {
     display: grid;
     justify-content: center;
     margin: 0 auto;
-    
+    padding: 1.5vh 1.5vw;
+    margin-top: 25vh;
+    border: 0 solid black;
+    border-radius: 3vh;
+    font-size: 1.25rem;
+    background: #ff7777;
 }
 
 #continueBadAnswer {
     font-size: 20px;
-    margin-top: 40vh;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
     height: 12.5vh;
-    width: 20vw;
-    background: #ff2222;
-    color: black;
+    width: 400px;
+    background: #ce1010;
+    box-shadow: 0 10px 0 0 #800b0b;
+    color: rgb(255, 255, 255);
     border: 0 solid black;
     border-radius: 5vh;
     cursor: pointer;
@@ -202,8 +217,7 @@ p {
 }
 
 #continueBadAnswer:hover {
-    background: #d40404;
-    color: white;
+    background: #e81111;
 }
 
 #results {
@@ -274,16 +288,17 @@ p {
     border-radius: 3vh;
     display: grid;
     justify-content: center;
-    background: #ebd423;
+    background: #e3cc21;
+    box-shadow: 0 10px 0 0 #ab9916;
     color: black;
     font-size: 1.5rem;
     align-items: center;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 #finalBtn:hover {
-    background: #d5bf17;
-    color: white;
+    background: rgb(246, 220, 26);
 }
 
 #hrefBtn {

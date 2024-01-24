@@ -21,7 +21,7 @@ main {
 
 #german {
   height: 4vh;
-  width: 8vw;
+  width: 175px;
   margin-left: 7%;
   border-style: solid;
   border-radius: 1vh;
@@ -29,7 +29,7 @@ main {
 
 #english {
   height: 4vh;
-  width: 8vw;
+  width: 175px;
   margin-right: 7%;
   border-style: solid;
   border-radius: 1vh;

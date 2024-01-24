@@ -22,21 +22,23 @@
             <p id="helpOver"></p>
             <p id="wordQuestions"></p>
             <textarea name="questions" id="questions" cols="30" rows="15"></textarea>
-            <input onclick="confirmBtn()" type="submit" id="submitBtn" value="Confirmer">
+            <div id="separation">
+                <input onclick="confirmBtn()" type="submit" id="submitBtn" value="Confirmer">
+            </div>
         </div>
         <div id="goodAnswer">
-            <input onclick="continueGoodAnswer()" type="submit" id="continueGoodAnswer" value="Correct">
+            <input onclick="continueGoodAnswer()" type="submit" id="continueGoodAnswer" value="Continuer">
         </div>
         <div id="badAnswer">
             <div id="correctAnswer"></div>
-            <input onclick="continueBadAnswer()" type="submit" id="continueBadAnswer" value="Incorrect">
+            <input onclick="continueBadAnswer()" type="submit" id="continueBadAnswer" value="Continuer">
         </div>
     </main>
     <div id="results">
         <div id="resultsTitle">Votre Leçon est terminé !</div>
         <div id="scoreGoodAnswers"></div>
         <div id="scoreBadAnswers"></div>
-        <a id="hrefBtn" href="/first_choice_menu/index.html"><button id="finalBtn">Terminer</button></a>
+        <a id="hrefBtn" href="/index.html"><button id="finalBtn">Terminer</button></a>
     </div>
 </body>
 </html>
