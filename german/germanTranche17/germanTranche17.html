@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranche 17</title>
+
+    <link rel="stylesheet" href="/german/germanTranche17/germanTranche17.css">
+    <script src="/german/germanTranche17/germanTranche17.js"></script>
+</head>
+<body>
+    <div id="firstTranche17PageMenu">
+        <label class="container">Mode défi
+            <input type="checkbox" id="ckeckboxDefi" onclick="defiBtn()">
+            <span class="checkmark"></span>
+        </label>
+        <button id="startBtn" onclick="startBtn()">Commencer</button>
+    </div>
+    <main id="questionTranche17">
+        <div id="questionAndValidation">
+            <h3>Traduisez d'allemand à français :</h3>
+            <p id="helpOver"></p>
+            <p id="wordQuestions"></p>
+            <textarea name="questions" id="questions" cols="30" rows="15"></textarea>
+            <input onclick="confirmBtn()" type="submit" id="submitBtn" value="Confirmer">
+        </div>
+        <div id="goodAnswer">
+            <input onclick="continueGoodAnswer()" type="submit" id="continueGoodAnswer" value="Correct">
+        </div>
+        <div id="badAnswer">
+            <div id="correctAnswer"></div>
+            <input onclick="continueBadAnswer()" type="submit" id="continueBadAnswer" value="Incorrect">
+        </div>
+    </main>
+    <div id="results">
+        <div id="resultsTitle">Votre Leçon est terminé !</div>
+        <div id="scoreGoodAnswers"></div>
+        <div id="scoreBadAnswers"></div>
+        <a id="hrefBtn" href="/first_choice_menu/index.html"><button id="finalBtn">Terminer</button></a>
+    </div>
+</body>
+</html>

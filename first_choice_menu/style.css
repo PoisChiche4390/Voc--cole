@@ -1,0 +1,36 @@
+@font-face {
+  font-family: Noto_Sans;
+  src: url(/fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  font-family: Noto_Sans;
+}
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
+}
+
+#eng-germ_choice {
+  display: flex;
+  justify-content: center;
+}
+
+#german {
+  height: 4vh;
+  width: 8vw;
+  margin-left: 7%;
+  border-style: solid;
+  border-radius: 1vh;
+}
+
+#english {
+  height: 4vh;
+  width: 8vw;
+  margin-right: 7%;
+  border-style: solid;
+  border-radius: 1vh;
+}

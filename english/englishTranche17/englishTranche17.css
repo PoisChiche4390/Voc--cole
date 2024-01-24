@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Noto_Sans;
+    src: url(/fonts/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+  }
+
+* {
+    font-family: Noto_Sans;
+}
