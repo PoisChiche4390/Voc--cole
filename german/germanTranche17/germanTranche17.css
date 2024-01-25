@@ -103,10 +103,6 @@ h3 {
     font-size: 1.75rem;
 }
 
-p {
-    font-size: 1.25rem;
-}
-
 #fromGermanToFrench {
     text-align: center;
 }
@@ -120,6 +116,8 @@ p {
     border-radius: 2vh;
     padding: 7px 10px;
     background: white;
+    font-size: 1.25rem;
+    margin-top: 5vh;
 }
 
 #questions {
