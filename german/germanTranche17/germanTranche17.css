@@ -14,6 +14,7 @@
 }
 
 .container {
+    height: 26px;
     width: 130px;
     display: block;
     position: relative;
@@ -144,7 +145,7 @@ p {
 #separation {
     width: 100vw;
     border-top: 2px solid #d2d2d2;
-    margin-top: 19vh;
+    margin-top: 17.5vh;
 }
 
 #submitBtn {
@@ -191,6 +192,7 @@ p {
 #correctAnswer {
     display: grid;
     justify-content: center;
+    text-align: center;
     margin: 0 auto;
     padding: 1.5vh 1.5vw;
     margin-top: 25vh;
@@ -281,7 +283,7 @@ p {
 #finalBtn {
     height: 7.5vh;
     width: 25vw;
-    margin-top: 15vh;
+    margin-top: 20vh;
     padding-left: 1vw;
     padding-right: 1vw;
     border: 0 solid black;
@@ -303,4 +305,111 @@ p {
 
 #hrefBtn {
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 1700px) {
+    #resultsTitle,
+    #scoreGoodAnswers,
+    #scoreBadAnswers {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #resultsTitle,
+    #scoreGoodAnswers,
+    #scoreBadAnswers {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        margin-top: 10vh;
+    }
+    #startBtn {
+        margin-top: 30vh;
+        width: 300px;
+        font-size: 1.2rem;
+    }
+    h3 {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 1.2rem;
+    }
+    #wordQuestions {
+        width: 285px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding: 7px 12.5px;
+        font-size: 1rem;
+    }
+    #questions {
+        height: 20vh;
+        width: 250px;
+        margin-top: 14vh;
+        padding-top: 7px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 1rem;
+    }
+    #separation {
+        border-top: 2px solid #d2d2d2;
+        margin-top: 20vh;
+    }
+    #submitBtn {
+        margin-top: 4.2vh;
+    }
+    #correctAnswer {
+        width: 280px;
+        padding: 1.5vh 1vw;
+        margin-top: 25vh;
+        font-size: 1rem;
+    }
+    #continueBadAnswer {
+        font-size: 1rem;
+        margin-top: 15vh;
+        height: 10vh;
+        width: 290px;
+    }
+    #continueGoodAnswer {
+        margin-top: 50vh;
+        font-size: 1rem;
+        height: 10vh;
+        width: 290px;
+    }
+    #resultsTitle {
+        width: 210px;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    #scoreGoodAnswers {
+        width: 210px;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    #scoreBadAnswers {
+        width: 210px;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        justify-content: center;
+        font-size: 1rem;
+    }
+    #finalBtn {
+        width: 300px;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        justify-content: center;
+        background: #e3cc21;
+        font-size: 1.25rem;
+        align-items: center;
+        transition: 0.2s;
+        cursor: pointer;
+    }
 }

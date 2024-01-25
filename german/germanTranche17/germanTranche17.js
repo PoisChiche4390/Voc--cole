@@ -110,11 +110,9 @@ document.addEventListener("keypress", function(event) {
     if (score <= 10) {
         if (event.key === "Enter" && keypressEvent == 1) {
         confirmBtn()
-        keypressEvent = 2
         } else if(event.key === "Enter" && keypressEvent == 2) {
         continueGoodAnswer()
         continueBadAnswer()
-        keypressEvent = 1
         }
 }})
 
@@ -135,7 +133,7 @@ function startBtn() {
     document.getElementById("wordQuestions").style.display = "flex"
     document.getElementById("wordQuestions").style.marginTop = "10vh"
 
-    
+
     randomWord = Math.floor((Math.random() * 24) + 1); 
     if (randomWord === 1) {
         document.getElementById("wordQuestions").innerHTML = french1
@@ -213,9 +211,10 @@ function startBtn() {
 }
 
 function continueGoodAnswer() {
-    if (score <= 10) {
+    if (score < 10) {
         document.getElementById("questionAndValidation").style.display = "grid"
         document.getElementById("goodAnswer").style.display = "none"
+        keypressEvent = 1
         randomWord = Math.floor((Math.random() * 24) + 1); 
         if (randomWord === 1) {
             document.getElementById("wordQuestions").innerHTML = french1
@@ -299,9 +298,10 @@ function continueGoodAnswer() {
 }
 
 function continueBadAnswer() {
-    if (score <= 10) {
+    if (score < 10) {
         document.getElementById("questionAndValidation").style.display = "grid"
         document.getElementById("badAnswer").style.display = "none"
+        keypressEvent = 1
         randomWord = Math.floor((Math.random() * 24) + 1); 
         if (randomWord === 1) {
         document.getElementById("wordQuestions").innerHTML = french1
@@ -393,6 +393,7 @@ function confirmBtn() {
             document.getElementById("questionAndValidation").style.display = "none"
             document.getElementById("goodAnswer").style.display = "grid"
             document.getElementById("questions").value = "";
+            keypressEvent = 2
     } else {
             duolingoSoundBadAnswer.play();
             score = score + 1
@@ -401,5 +402,6 @@ function confirmBtn() {
             document.getElementById("questionAndValidation").style.display = "none"
             document.getElementById("badAnswer").style.display = "grid"
             document.getElementById("questions").value = "";
+            keypressEvent = 2
     }
 }

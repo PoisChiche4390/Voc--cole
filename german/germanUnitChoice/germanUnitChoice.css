@@ -21,6 +21,25 @@ main {
 
 button {
     margin: 4vh 4vh;
-    width: 175px;
-    height: 50px;
+    width: 225px;
+    height: 75px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        margin-top: 0;
+    }
+    #germanTrancheChoice {
+        display: grid;
+        margin-top: 5vh;
+    }
+    button {
+        width: 250px;
+        border: 0 solid;
+        border-radius: 5vh;
+        background: #3aaaebbe;
+        font-size: 1rem;
+    }
 }
